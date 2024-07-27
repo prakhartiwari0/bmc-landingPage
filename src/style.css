@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+  --lighter_purple:#5B3FA8 ;
+  --purple: #574BB5;
+  --pink_purple:#624ABC;
+  --darker_purple:#483491;
+  --neonGreen:#00FF9D;
+  --black:#000000;
+  --white:#FFFFFF;
+
+
+}
+
+body{
+  
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal; 
+  font-variation-settings:
+    "slnt" 0;
+}
+
+  .loginButton {
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+
+header{
+      /* background-position: center -150px; */
+
+}
