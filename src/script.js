@@ -2,6 +2,7 @@
 
 import crossBarImgURL from './assets/Cross Bar@4x.png'
 import dropPlusImgURL from './assets/Drop Plus@4x.png'
+import loginPageURL from './pages/login.html'
 
 
 function toggleFaq(element) {
@@ -49,7 +50,7 @@ faqElements.forEach(element=>{
 let loginButton = document.querySelectorAll('.loginButton')
 loginButton.forEach(button=>{
     button.addEventListener('click', ()=>{
-        open('pages/login.html', '_self')
+        open(loginPageURL, '_self')
     })
 
 })
