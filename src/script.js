@@ -43,3 +43,13 @@ faqElements.forEach(element=>{
         
     })
 })
+
+
+
+let loginButton = document.querySelectorAll('.loginButton')
+loginButton.forEach(button=>{
+    button.addEventListener('click', ()=>{
+        open('pages/login.html', '_self')
+    })
+
+})

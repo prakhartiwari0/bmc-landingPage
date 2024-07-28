@@ -1,0 +1,63 @@
+/* Tailwind CSS custom styles */
+.form_group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.signUpScreen{
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+.form_input {
+  border: 1px solid rgba(78, 78, 78, 0.321);
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--purple);
+  placeholder: transparent;
+}
+
+.form_label {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  padding: 0 0.25rem;
+  background-color: var(--white);
+  color: var(--darkbg);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.form_input::placeholder {
+  color: transparent;
+}
+
+.form_input:not(:placeholder-shown) + .form_label,
+.form_input:focus + .form_label {
+  top: -0.75rem;
+  left: 0.5rem;
+  background-color: var(--white);
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.show-hide-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-hide-password img {
+  width: 24px;
+  height: 24px;
+}
+
+select.form_input {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.5rem;
+}

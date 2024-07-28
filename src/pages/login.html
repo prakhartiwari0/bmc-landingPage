@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../index.css" />
+		<link rel="stylesheet" href="login.css" />
+		<title>BMC - Borrow My Card</title>
+	</head>
+	<body>
+		<nav class="flex justify-between items-center py-4 px-10 bg-darker_purple">
+			<div class="brandIcon_wrapper">
+				<img src="../assets/BMC Logo@4x.png" alt="" class="h-4 md:h-6" />
+			</div>
+			<div class="loginButton_wrapper">
+				<button
+					class="loginButton bg-none   border-neonGreen border-2 font-bold text-white px-5 py-3 rounded transform transition-transform duration-200 hover:scale-90 active:scale-105">
+					Login
+				</button>
+				<button
+					class="signUpButton bg-neonGreen font-bold text-black px-5 py-3 rounded transform transition-transform duration-200 hover:scale-90 active:scale-105">
+					Sign Up
+				</button>
+			</div>
+		</nav>
+
+		<section>
+			<div class="mainBox border-black border-b-2">
+				<dxiv class="signUpScreen bg-white text-white p-2 flex justify-center">
+					<form class="max-w-md w-full">
+						<div class="form_group relative mb-6">
+							<input
+								type="text"
+								id="name"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white placeholder-transparent"
+								placeholder="Name" />
+							<label
+								for="name"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								>Name</label
+							>
+						</div>
+
+						<div class="form_group relative mb-6">
+							<input
+								type="email"
+								id="email"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								placeholder="Email" />
+							<label
+								for="email"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								>Email</label
+							>
+						</div>
+
+						<div class="form_group relative mb-6">
+							<input
+								type="password"
+								id="password"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								placeholder="Password" />
+							<label
+								for="password"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								>Password</label
+							>
+							<button
+								type="button"
+								class="show-hide-password absolute right-3 top-1/2 transform -translate-y-1/2 text-white">
+								<img
+									src="../assets/show_password.svg"
+									alt="Show Password"
+									id="showHideIcon" />
+							</button>
+						</div>
+
+						<div class="form_group relative mb-6">
+							<input
+								type="password"
+								id="confirmPassword"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								placeholder="Password" />
+							<label
+								for="confirmPassword"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								>Confirm Password</label
+							>
+							<button
+								type="button"
+								class="show-hide-password absolute right-3 top-1/2 transform -translate-y-1/2 text-white">
+								<img
+									src="../assets/show_password.svg"
+									alt="Show Password"
+									id="showHideIcon" />
+							</button>
+						</div>
+
+						<div class="form_group relative mb-6">
+							<select
+								id="role"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white appearance-none">
+								<!-- <option value="" disabled selected>Select Role</option> -->
+								<option value="cardRequestor" selected>Card Requestor</option>
+								<option value="cardProvider">Card Provider</option>
+							</select>
+							<label
+								for="role"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								>Registering As</label
+							>
+						</div>
+
+						<button
+							type="submit"
+							class="bg-purple text-white font-bold py-3 px-6 rounded-lg w-full">
+							Register Now
+						</button>
+					</form>
+				</div>
+
+
+
+				<div class="otpScreen hidden"></div>
+
+				<div class="successScreen hidden"></div>
+			</div>
+
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer class="bg-darkbg text-white gap-10 p-20 lg:flex flex-row">
+			<div class="flex flex-col justify-between h-full p-2">
+				<div class="logo_wrapper flex mb-16">
+					<img src="../assets/BMC Logo@4x.png" alt="" class="w-1/6" />
+				</div>
+
+				<div class="footerText">
+					<p>
+						Need help? Send us a mail at:
+						<a href="mailto:care@borrowmycards.com" class="text-neonGreen"
+							>care@borrowmycards.com</a
+						>
+					</p>
+					<p>
+						&copy;BorrowMyCards — Powered by Dollarpe Technologies Pvt Ltd. All
+						rights reserved.
+					</p>
+				</div>
+			</div>
+
+			<div class="links_wrapper flex flex-col flex-.5 md:mt-10">
+				<a href="#" class="hover:text-neonGreen transition-colors p-2">FAQs</a>
+				<a href="#" class="hover:text-neonGreen transition-colors p-2"
+					>Terms of Services</a
+				>
+				<a href="#" class="hover:text-neonGreen transition-colors p-2"
+					>Privacy Policy</a
+				>
+			</div>
+		</footer>
+	</body>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const passwordInput = document.getElementById('password');
+			const showHideButton = document.querySelector('.show-hide-password');
+			const showHideIcon = document.getElementById('showHideIcon');
+
+			showHideButton.addEventListener('click', function () {
+				const isPasswordVisible = passwordInput.type === 'text';
+				passwordInput.type = isPasswordVisible ? 'password' : 'text';
+				showHideIcon.src = isPasswordVisible
+					? '../assets/show_password.svg'
+					: '../assets/hide_password.svg';
+				showHideIcon.alt = isPasswordVisible
+					? 'Show Password'
+					: 'Hide Password';
+			});
+		});
+	</script>
+</html>
