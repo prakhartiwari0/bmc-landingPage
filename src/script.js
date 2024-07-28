@@ -50,7 +50,7 @@ faqElements.forEach(element=>{
 let loginButton = document.querySelectorAll('.loginButton')
 loginButton.forEach(button=>{
     button.addEventListener('click', ()=>{
-        open(loginPageURL, '_self')
+        open('./pages/login.html', '_self')
     })
 
 })
