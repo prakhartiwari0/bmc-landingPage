@@ -9,6 +9,7 @@ export default {
             colors: {
                 lighter_purple: '#5B3FA8',
                 purple: '#574BB5',
+                purple2:'#583EB7',
                 pink_purple: '#624ABC',
                 darker_purple: '#483491',
                 neonGreen: '#00FF9D',
