@@ -289,12 +289,84 @@
 </section>
 
         
-        
-        <!-- 
+        <section class="bg-purple2 text-white text-center p-12">
+  <h2 class="text-3xl font-bold mb-6">FAQ</h2>
 
-    <section>
-      <h2>FAQs</h2>
-    </section> -->
+  <div class="faq_wrapper mx-auto max-w-md  text-left">
+
+    
+    <div class="faq_item_wrapper border-b-2 border-opacity-50 border-white">
+      <div class="faq_item py-4 flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+        <span class="faq_question font-bold">Are my card details safe?</span>
+        <img src="assets/Drop Plus@4x.png" alt="plus icon" class="faq_icon w-4 h-4">
+      </div>
+      <div class="faq_answer hidden mt-4 text-left pb-6">
+        <p>Yes. Your card details are 100% safe. We do not ask you to share 16-digit card number, expiry date, or the CVV. We only ask you share details, such as the name of the bank, card type, and the purchase limit that can be used by the buyer.</p>
+      </div>
+    </div>
+
+    <div class="faq_item_wrapper border-b-2 border-opacity-50 border-white">
+      <div class="faq_item py-4 flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+        <span class="faq_question font-bold">I am a buyer, how safe is my money in BMC?</span>
+        <img src="assets/Drop Plus@4x.png" alt="plus icon" class="faq_icon w-4 h-4">
+      </div>
+      <div class="faq_answer hidden mt-4 text-left pb-6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas modi repellat ducimus laboriosam at! Laborum sapiente magnam suscipit eaque rerum.</p>
+      </div>
+    </div>
+
+    <div class="faq_item_wrapper border-b-2 border-opacity-50 border-white">
+      <div class="faq_item py-4 flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+        <span class="faq_question font-bold">What happens to my payment if I don't receive my order?</span>
+        <img src="assets/Drop Plus@4x.png" alt="plus icon" class="faq_icon w-4 h-4">
+      </div>
+      <div class="faq_answer hidden mt-4 text-left pb-6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas modi repellat ducimus laboriosam at! Laborum sapiente magnam suscipit eaque rerum.</p>
+      </div>
+    </div>
+    
+    <div class="faq_item_wrapper border-b-2 border-opacity-50 border-white">
+      <div class="faq_item py-4 flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+        <span class="faq_question font-bold">Is my e-commerce account safe?</span>
+        <img src="assets/Drop Plus@4x.png" alt="plus icon" class="faq_icon w-4 h-4">
+      </div>
+      <div class="faq_answer hidden mt-4 text-left pb-6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas modi repellat ducimus laboriosam at! Laborum sapiente magnam suscipit eaque rerum.</p>
+      </div>
+    </div>
+        
+    <div class="faq_item_wrapper border-b-2 border-opacity-50 border-white">
+      <div class="faq_item py-4 flex justify-between items-center cursor-pointer" onclick="toggleFaq(this)">
+        <span class="faq_question font-bold">Can I withdraw my money to bank account?</span>
+        <img src="assets/Drop Plus@4x.png" alt="plus icon" class="faq_icon w-4 h-4">
+      </div>
+      <div class="faq_answer hidden mt-4 text-left pb-6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas modi repellat ducimus laboriosam at! Laborum sapiente magnam suscipit eaque rerum.</p>
+      </div>
+    </div>
+        
+
+      </div>
+        
+        
+</section>
+
+
 
   </body>
+
+  <script>
+    function toggleFaq(element) {
+    const answer = element.nextElementSibling;
+    const icon = element.querySelector('.faq_icon');
+
+    if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+    icon.src = 'assets/Cross Bar@4x.png';
+    } else {
+        answer.classList.add('hidden');
+    icon.src = 'assets/Drop Plus@4x.png';
+    }
+  }
+</script>
 </html>
