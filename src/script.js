@@ -1,6 +1,7 @@
 
 
 import crossBarImgURL from './assets/Cross Bar@4x.png'
+import dropPlusImgURL from './assets/Drop Plus@4x.png'
 
 
 function toggleFaq(element) {
@@ -21,6 +22,11 @@ function toggleFaq(element) {
 let faqElements = document.querySelectorAll('.faq_item')
 
 faqElements.forEach(element=>{
+    const icon = element.querySelector('.faq_icon');
+    icon.src = dropPlusImgURL;
+    
+
+
     element.addEventListener('click', ()=>{
         const answer = element.nextElementSibling;
         const icon = element.querySelector('.faq_icon');
@@ -31,7 +37,8 @@ faqElements.forEach(element=>{
             // icon.src = 'assets/Cross Bar@4x.png';
         } else {
             answer.classList.add('hidden');
-            icon.src = 'assets/Drop Plus@4x.png';
+            // icon.src = 'assets/Drop Plus@4x.png';
+            icon.src = dropPlusImgURL;
         }
         
     })
