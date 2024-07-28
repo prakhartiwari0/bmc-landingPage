@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
     root: 'src',
-    assetsInclude:'src/**/*.html'
+    // assetsInclude:'src/**/*.html'
     // other configurations...
 })
