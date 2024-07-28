@@ -2,7 +2,7 @@
 
 import crossBarImgURL from './assets/Cross Bar@4x.png'
 import dropPlusImgURL from './assets/Drop Plus@4x.png'
-import loginPageURL from './pages/login.html'
+// import loginPageURL from './pages/login.html'
 
 
 function toggleFaq(element) {
