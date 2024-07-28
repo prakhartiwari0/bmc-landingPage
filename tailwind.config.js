@@ -15,6 +15,7 @@ export default {
                 neonGreen: '#00FF9D',
                 black: '#000000',
                 white: '#FFFFFF',
+                darkbg:'#171A1F'
             },
 },
     },
