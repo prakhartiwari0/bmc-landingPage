@@ -8,7 +8,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'src/index.html',
-                login: 'src/pages/login.html', // add your additional HTML files here
+                login: 'src/pages/login.html',
+                tnc: 'src/pages/tnc.html', 
+                privacyPolicy: 'src/pages/privacy.html', 
             }
         }
     },
