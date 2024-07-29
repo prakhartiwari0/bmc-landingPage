@@ -25,3 +25,12 @@ body{
   font-variation-settings:
     "slnt" 0;
 }
+
+
+
+@media (max-width: 640px) {
+  footer .logo_wrapper img{
+    width: 50%;
+    
+}
+}
