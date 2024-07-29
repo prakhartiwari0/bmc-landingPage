@@ -6,8 +6,11 @@
   }
 
 
-
-header{
+  /* @media (min-width: 1024px) { */
+    
+    header{
       /* background-position: center -150px; */
-
-}
+      
+    }
+    
+  /* } */

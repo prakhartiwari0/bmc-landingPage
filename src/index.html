@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="tailwind.css">
     <title>BMC - Borrow My Card</title>
   </head>
   <body>
@@ -23,9 +24,9 @@
     </nav>
 
 
-<header class="flex flex-col-reverse md:flex-row justify-between sm:justify-normal items-center p-20 h-screen bg-cover bg-darker_purple bg-no-repeat" style="background-image: url('assets/heroBG.png');">
+<header class="flex flex-col-reverse md:flex-row justify-between sm:justify-center items-center p-20 bg-cover bg-darker_purple bg-no-repeat lg:h-screen" style="background-image: url('assets/heroBG.png');">
   <div class="leftArea text-center md:text-left md:w-1/2">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">
+    <h1 class="text-4xl md:text-6xl max-lg:mt-20 font-bold mb-4 text-white">
       Find the <span class="text-neonGreen">right</span> card every time!
     </h1>
     <span class="block mt-2 text-white opacity-80">
@@ -51,7 +52,7 @@
 
 <section class="bg-purple text-center py-8 relative pb-24">
   <h2 class="text-white text-3xl font-bold mb-8">Save Big On</h2>
-  <div class="cards_wrapper grid grid-cols-1 md:grid-cols-3 gap-5 md:px-60 px-10">
+  <div class="cards_wrapper grid grid-cols-1 md:grid-cols-3 gap-5 lg:px-60 px-10">
 
     <div class="card bg-darker_purple rounded-lg overflow-hidden p-5 flex flex-col justify-evenly shadow-lg">
       <div class="cardImage_wrapper bg-pink_purple rounded p-4 mb-3">
@@ -93,8 +94,8 @@
 
 
 
-    <section class="bg-darker_purple text-white text-center flex flex-col justify-center content-center p-5">
-      <h2 class="text-3xl font-bold mt-9">Benefits</h2>
+    <section class="bg-darker_purple text-white text-center flex flex-col justify-center content-center p-5 pt-10">
+      <h2 class="text-3xl font-bold my-5">Benefits</h2>
 
       <!-- <div class="benefitBoxes_wrapper grid grid-cols-1 md:grid-cols-2 gap-5 md:p-16"> -->
         <div class="benefitBoxes_wrapper grid grid-cols-1 md:grid-cols-2 gap-5 md:p-16 mx-auto max-w-screen-lg text-left">
@@ -133,14 +134,14 @@
 
 
     <!-- -------------------------------------------- -->
-<section class="bg-purple2 text-center flex flex-col p-12 relative">
-  <h2 class="text-3xl font-bold mb-6 text-white">How it Works</h2>
+<section class="bg-purple2 text-center flex flex-col p-12 relative max-sm:pb-20">
+  <h2 class="text-3xl font-bold text-white max-sm:pb-10">How it Works</h2>
 
-  <div class="stepsBoxes_wrapper p-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="stepsBoxes_wrapper md:p-20 grid grid-cols-1 md:grid-cols-3 gap-6">
 
     <div class="stepBox flex flex-col items-center max-w-sm mx-auto">
-      <div class="stepBoxDiagram border-2 border-white rounded-lg mb-4 flex flex-col items-center w-full h-full">
-        <div class="stepBoxImg_wrapper flex justify-center p-5 py-8 w-full">
+      <div class="stepBoxDiagram border-2 border-white rounded-lg mb-4 flex flex-col items-center justify-between w-full h-full">
+        <div class="stepBoxImg_wrapper flex justify-center items-center p-5 py-8 w-full h-full">
           <img src="assets/Card Requestor@4x.png" class="w-1/3" alt="">
         </div>
         <div class="stepHeading bg-darker_purple w-full py-2 px-2 rounded-lg"> 
@@ -193,7 +194,7 @@
 
 
   
-  <button class="createAccountButton loginButton flex items-center bg-neonGreen p-4 rounded font-bold absolute -bottom-6 left-1/2 transform -translate-x-1/2 transition-transform duration-200 hover:scale-95 active:scale-105">
+  <button class="createAccountButton loginButton flex items-center bg-neonGreen p-4 rounded font-bold absolute -bottom-6 left-1/2 transform -translate-x-1/2 transition-transform duration-200 hover:scale-95 active:scale-105 max-sm:-bottom-10">
     <img src="assets/createAccountIcon.svg" alt="" class="mr-2">
     <span class="text-black">Register yourself for early access</span>
   </button>
@@ -207,7 +208,7 @@
 
   <div class="supportedPlatformsAndCards_wrapper mx-auto max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-1 justify-center items-center">
     
-    <div class="platforms_wrapper bg-white p-4 rounded-lg shadow-lg mx-auto w-80 h-full flex flex-col">
+    <div class="platforms_wrapper bg-white p-4 rounded-lg shadow-lg mx-auto lg:w-80 h-full flex flex-col">
       <span class="block bg-purple text-white text-lg font-semibold p-4 rounded-lg mb-4">Supported Platforms</span>
       
       <div class="platformsLogos_wrapper grid grid-cols-2 gap-2 flex-grow">
@@ -246,7 +247,7 @@
       <span class="block text-black text-lg font-semibold mt-4">and more...</span>
     </div>
     
-    <div class="cards_wrapper bg-white p-4 rounded-lg shadow-lg mx-auto w-80 h-full flex flex-col">
+    <div class="cards_wrapper bg-white p-4 rounded-lg shadow-lg mx-auto lg:w-80 h-full flex flex-col max-md:mt-10">
       <span class="block bg-purple text-white text-lg font-semibold p-4 rounded-lg mb-4">Supported Cards</span>
       
       <div class="cardsLogos_wrapper grid grid-cols-2 gap-2 flex-grow">
@@ -370,7 +371,7 @@
     </div>
   </div>
 
-  <div class="links_wrapper flex flex-col flex-.5 md:mt-10">
+  <div class="links_wrapper flex flex-col flex-.5 max-lg:mt-10">
   <a href="#" class="hover:text-neonGreen transition-colors p-2">FAQs</a>
   <a href="#" class="hover:text-neonGreen transition-colors p-2">Terms of Services</a>
   <a href="#" class="hover:text-neonGreen transition-colors p-2">Privacy Policy</a>

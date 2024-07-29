@@ -7,6 +7,7 @@
 .signUpScreen{
     /* border: 2px solid black; */
     /* padding: 2rem; */
+    /* border-color: purple; */
 }
 
 .form_input {
@@ -60,4 +61,90 @@ select.form_input {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   background-size: 1.5rem;
+}
+
+
+
+
+/* OTP Screen styles  */
+/* Tailwind CSS custom styles */
+.otp_form_wrapper {
+  margin-top: 2rem;
+  /* display: none; */
+}
+
+/* .form_group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form_label {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  padding: 0 0.25rem;
+  background-color: var(--white);
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s;
+  pointer-events: none;
+} */
+
+.otp_input {
+  border: 1px solid rgba(78, 78, 78, 0.321);
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Hide number input arrows */
+.otp_input::-webkit-outer-spin-button,
+.otp_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otp_input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+
+
+.otp_input:focus {
+  border-color: var(--purple);
+  outline: none;
+}
+
+.otp_input:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.text-opacity-60 {
+  opacity: 0.6;
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+.successImg{
+    max-width: 8rem;
 }

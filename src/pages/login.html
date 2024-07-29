@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="../index.css" />
+		<link rel="stylesheet" href="../tailwind.css" />
 		<link rel="stylesheet" href="login.css" />
 		<title>BMC - Borrow My Card</title>
 
@@ -28,7 +29,9 @@
 
 		<section class="flex justify-center p-12">
 			<div class="mainBox flex justify-center rounded-lg w-fit border-purple2 border-2 p-5 px-10">
-				<dxiv class="signUpScreen bg-white text-white p-2 flex justify-center">
+
+
+				<div class="signUpScreen bg-white text-black p-2 flex justify-center min-w-1/2">
 					<form class="max-w-md w-full">
 						<div class="form_group relative mb-6">
 							<input
@@ -38,7 +41,7 @@
 								placeholder="Name" />
 							<label
 								for="name"
-								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-black transition-all"
 								>Name</label
 							>
 						</div>
@@ -47,11 +50,11 @@
 							<input
 								type="email"
 								id="email"
-								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-purple placeholder-transparent"
 								placeholder="Email" />
 							<label
 								for="email"
-								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-black transition-all"
 								>Email</label
 							>
 						</div>
@@ -60,11 +63,11 @@
 							<input
 								type="password"
 								id="password"
-								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-purple placeholder-transparent"
 								placeholder="Password" />
 							<label
 								for="password"
-								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-black transition-all"
 								>Password</label
 							>
 							<button
@@ -81,11 +84,11 @@
 							<input
 								type="password"
 								id="confirmPassword"
-								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white placeholder-transparent"
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-purple placeholder-transparent"
 								placeholder="Password" />
 							<label
 								for="confirmPassword"
-								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-black transition-all"
 								>Confirm Password</label
 							>
 							<button
@@ -101,31 +104,94 @@
 						<div class="form_group relative mb-6">
 							<select
 								id="role"
-								class="form_input border border-white rounded-lg w-full p-4 bg-white text-white appearance-none">
+								class="form_input border border-white rounded-lg w-full p-4 bg-white text-purple appearance-none">
 								<!-- <option value="" disabled selected>Select Role</option> -->
 								<option value="cardRequestor" selected>Card Requestor</option>
 								<option value="cardProvider">Card Provider</option>
 							</select>
 							<label
 								for="role"
-								class="form_label absolute left-3 top-0 px-1 bg-white text-white transition-all"
+								class="form_label absolute left-3 top-0 px-1 bg-white text-black transition-all"
 								>Registering As</label
 							>
 						</div>
 
 						<button
 							type="submit"
-							class="bg-purple text-white font-bold py-3 px-6 rounded-lg w-full">
+							class="bg-purple text-white font-bold py-3 px-6 rounded-lg w-full  transform transition-transform duration-200 hover:scale-90 active:scale-105">
 							Register Now
 						</button>
 					</form>
 				</div>
 
 
+                <div class="otpScreen otp_form_wrapper hidden  max-w-md w-full mt-8 text-black">
+                <h2 class="text-xl font-bold text-black mb-4 text-center">Verify your email</h2>
+                <form class="otp_form max-w-md w-full">
+                    <div class="form_group mb-6">
+                        <p class="text-opacity-40">Enter OTP</p>
+                        <div id="otp" class="flex space-x-2">
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                        <input
+                        type="number"
+                        maxlength="1"
+                        class="otp_input border border-white rounded-lg w-full p-4 bg-white text-center text-black placeholder-transparent" />
+                    </div>
+                    </div>
 
-				<div class="otpScreen hidden"></div>
+                    <div class="flex justify-center items-center mb-6">
+                    <button type="button" class="text-black">Resend OTP</button>
+                    </div>
 
-				<div class="successScreen hidden"></div>
+                    <button type="submit" class="bg-purple text-white font-bold py-3 px-6 rounded-lg w-full  transform transition-transform duration-200 hover:scale-90 active:scale-105">
+                    Verify Email
+                    </button>
+                </form>
+                </div>
+
+
+				<div class="successScreen hidden textBlack text-center flex-col justify-center items-center">
+
+
+                    <div class="successSign_wrapper w-100 flex justify-center p-5">
+
+                        <img src="../assets/success.png" alt="" class="successImg">
+                    </div>
+                    <div class="heading mt-8">
+                        <h3 class="font-bold">Registration Successful</H3>
+                    </div>
+
+                        <div class="sucessText mt-10 mb-10">
+                            <p class="">Thank you for joining our early access!</p>
+                            <p class="">We'll notify you vi a email when we go live. Stay tuned!</p>
+
+                            
+                        </div>
+
+                        <div class="homeButton mt-10">
+
+                            <button class="w-full bg-purple text-white rounded-lg p-4 mtq-10  transform transition-transform duration-200 hover:scale-90 active:scale-105">Go Back to Home</button>
+                        </div>
+                </div>
 			</div>
 
 
@@ -197,4 +263,6 @@
 			});
 		});
 	</script>
+
+    <script src="script.js"></script>
 </html>
