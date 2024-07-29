@@ -132,7 +132,11 @@ select.form_input {
 
 
 .otp_input:focus {
-  border-color: var(--purple);
+  border-color: var(--neonGreen);
+  outline: none;
+}
+.otp_input.correctOTPDigit {
+  border-color: var(--neonGreen);
   outline: none;
 }
 
@@ -167,10 +171,3 @@ select.form_input {
     max-width: 8rem;
 }
 
-
-@media (max-width: 640px) {
-  footer .logo_wrapper img{
-    width: 50%;
-    
-}
-}
