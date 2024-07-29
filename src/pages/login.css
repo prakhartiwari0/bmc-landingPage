@@ -11,10 +11,15 @@
 }
 
 .mainBox{
-    width: 50%;
+    width: 100%;
     border: 1.5px solid var(--purple);
     border-radius:1rem;
   }
+@media (min-width: 1024px) {
+  .mainBox{
+    width: 50%;
+  }
+}
   
   .signUpScreen{
     /* border: 2px solid black; */
