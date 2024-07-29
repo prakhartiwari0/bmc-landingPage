@@ -1,0 +1,34 @@
+body {
+	font-family: 'Arial', sans-serif;
+	color: var(--darkbg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--purple);
+}
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+h3 {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+p {
+	margin-bottom: 1rem;
+}
+a {
+	/* color: var(--neonGreen); */
+	/* text-decoration: underline; */
+}
+.section-heading {
+	margin-top: 2rem;
+}
