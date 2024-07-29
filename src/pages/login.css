@@ -115,7 +115,7 @@ select.form_input {
   background-color: var(--white);
   color: var(--black);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* Hide number input arrows */
@@ -165,4 +165,12 @@ select.form_input {
 
 .successImg{
     max-width: 8rem;
+}
+
+
+@media (max-width: 640px) {
+  footer .logo_wrapper img{
+    width: 50%;
+    
+}
 }
