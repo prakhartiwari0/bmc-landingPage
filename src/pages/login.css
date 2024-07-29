@@ -1,23 +1,36 @@
-/* Tailwind CSS custom styles */
+
+.loginButton{
+  border-color: var(--neonGreen);
+}
+
+
+
 .form_group {
   position: relative;
   margin-bottom: 1.5rem;
 }
 
-.signUpScreen{
+.mainBox{
+    width: 50%;
+    border: 1.5px solid var(--purple);
+    border-radius:1rem;
+  }
+  
+  .signUpScreen{
     /* border: 2px solid black; */
     /* padding: 2rem; */
     /* border-color: purple; */
-}
+    width: 100%;
+  }
 
 .form_input {
-  border: 1px solid rgba(78, 78, 78, 0.321);
+  border: 1.5px solid rgba(78, 78, 78, 0.321);
   border-radius: 0.5rem;
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--white);
+  /* width: 100%; */
+  /* padding: 1rem; */
+  /* background-color: var(--white); */
   color: var(--purple);
-  placeholder: transparent;
+  /* placeholder: transparent; */
 }
 
 .form_label {
